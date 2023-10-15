@@ -20,7 +20,7 @@
             width: 582px;
             border-radius: 5px;
           }
-          .buttons > input {
+          .buttons > button {
             height: 36px;
             color: rgb(92, 92, 92);
             font-size: 14px;
@@ -36,12 +36,12 @@
     <body>
         <div id="searchContainer">
         <img src="googleLogo.png" alt="google" width="300">
-        <form action="https://www.google.com/search">
+        <form>
             <input class="search" type="text" name="q">
             <div class="buttons">
-              <input type="submit" value="Google Search">
-              <input type="hidden" name="btnI" value="I'm+Feeling+Lucky">
-              <input type="submit" value="I'm Feeling Lucky">
+              <button type="submit" value="Google Search" formaction="https://www.google.com/search"> Google Search </button>
+              <button type="submit"  formaction="https://www.google.com/search"name="btnI" value="I'm+Feeling+Lucky"> Im feeling lucky 
+              </button>
             </div>
         </form>
         </div>
