@@ -3,8 +3,19 @@
     <head>
         <title>Advanced Search</title>
         <style>
+          body {
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .container {
+            display: flex;
+            padding-left: 20px;
+          }
           .inpt {
             padding-top: 10px;
+          }
+          #words {
+            padding-left: 10px;
+            width: 20%;
           }
           .bar {
             border-radius: 1px;
@@ -12,19 +23,45 @@
             border-top: 1px solid;
             font-size: 13px;
             height: 25px;
-            padding: 1px 8px;
           }
+          #searchBoxes {
+            width: 50%;
+          }
+          #button {
+            margin-left: 450px;
+            text-align: center;
+            width: 120px;
+            height: 30px;
+            cursor: default;
+            color: white;
+            background-color: #4d90fe;
+            border: 1px solid #3079ed 
+          }
+
         </style>
     </head>
     <body>
-      <label style="margin-left: 10px; color: #d93025; font-size: 20px;font-style: inherit;">Advanced Image Search</label>
+      <img src="googleLogo.png" alt="google" width="70px" style="padding-bottom: 60px; padding-left: 10px;"> 
+      <label style="margin-left: -60px; color: #d93025; font-size: 20px;font-style: inherit;">Advanced Image Search</label>
+      <div style="border-bottom: 1px solid #ebebeb; padding-top: 20px;"></div>
         <form action="https://www.google.com/search">
-          <p>Find images with...</p>
-           <p class="inpt">all these words: <input class="bar" type="text" name="as_q"><br></p>
-           <p class="inpt">this exact word or phrase: <input class="bar" type="text" name="as_epq"></p>
-           <p class="inpt">any of these words: <input class="bar" type="text" name="as_oq"></p>
-           <p class="inpt">none of these words:<input class="bar" type="text" name="as_eq"></p>
-            <input type="submit" value="Google Search">
-        </form>
+          <div class="container">
+          <div id="words">
+             <p>Find images with...</p>
+              <p class="inpt">all these words:</p>
+              <p class="inpt">this exact word or phrase: </p>
+              <p class="inpt">any of these words: </p>
+              <p class="inpt">none of these words:</p>
+           </div>
+           <div id="serchboxes">
+            <br><br>
+           <p><input class="bar" type="text" name="as_epq"></p>
+           <p><input class="bar" type="text" name="as_q"></p>
+           <p><input class="bar" type="text" name="as_oq"></p>
+           <p><input class="bar" type="text" name="as_eq"></p>
+           <input type="submit" id="button" value="Advanced Search">
+          </div>
+        </div>
+          </form>
     </body>
 </html>
