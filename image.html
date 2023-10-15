@@ -2,12 +2,19 @@
 <html lang="en">
     <head>
         <title>Image Search</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
+      <div id="searchContainer">
+        <img src="googleLogo.png" alt="google" width="300">
+        <span style="color: rgb(90, 114, 221);font: size 16px;font-family: Arial, Helvetica, sans-serif;position: absolute;left: 725px;padding-top: 75px;"> images
+        </span>
         <form action="https://www.google.com/search">
-            <input type="hidden" name="tbm" value="isch">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
+            <input class="search" type="text" name="q">
+            <div class="buttons">
+              <button type="submit" name="tbm" value="isch"> Google Search </button>
+            </div>
         </form>
+      </div>
     </body>
   </html>

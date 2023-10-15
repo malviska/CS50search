@@ -2,13 +2,28 @@
 <html lang="en">
     <head>
         <title>Advanced Search</title>
+        <style>
+          .inpt {
+            padding-top: 10px;
+          }
+          .bar {
+            border-radius: 1px;
+            width: 570px;
+            border-top: 1px solid;
+            font-size: 13px;
+            height: 25px;
+            padding: 1px 8px;
+          }
+        </style>
     </head>
     <body>
+      <label style="margin-left: 10px; color: #d93025; font-size: 20px;font-style: inherit;">Advanced Image Search</label>
         <form action="https://www.google.com/search">
-            <input type="text" name="as_q" placeholder="all these words:"><br>
-            <input type="text" name="as_epq" placeholder="this exact word or phrase:">
-            <input type="text" name="as_oq" placeholder="any of these words:">
-            <input type="text" name="as_eq" placeholder="none of these words:">
+          <p>Find images with...</p>
+           <p class="inpt">all these words: <input class="bar" type="text" name="as_q"><br></p>
+           <p class="inpt">this exact word or phrase: <input class="bar" type="text" name="as_epq"></p>
+           <p class="inpt">any of these words: <input class="bar" type="text" name="as_oq"></p>
+           <p class="inpt">none of these words:<input class="bar" type="text" name="as_eq"></p>
             <input type="submit" value="Google Search">
         </form>
     </body>
